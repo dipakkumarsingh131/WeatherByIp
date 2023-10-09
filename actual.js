@@ -33,8 +33,8 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' +city, opt
 		wind_speed.innerHTML = response.wind_speed
 		wind_speed2.innerHTML = response.wind_speed
 		wind_degrees.innerHTML = response.wind_degrees
-		sunrise.innerHTML = response.sunrise
-		sunset.innerHTML = response.sunset
+		sunrise.innerHTML =new Date(Number(response.sunrise)*1000).toTimeString()
+		sunset.innerHTML = new Date(Number(response.sunset)*1000).toTimeString()
 	   
 
 	}
