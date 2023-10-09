@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="custom-background">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Weather</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">License</a>
+            <a class="dropdown-item" href="#">Contact</a>
+            <a class="dropdown-item" href="#">Cities</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link ">How To Use</a>
+        </li> -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input id="city" class="form-control mr-sm-2 custom-search-bar" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+
+  <h1 class="my-4 text-center">Weather Of <span id="cityName"></span></h1>
+  <div class="container">
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Temperatures</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title text-center"><span id="temp2" style="font-size: 3rem;"></span><small
+              class="text-muted"><sup><span>&#8451</span></sup></small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Temperature is <span id="temp"></span></li>
+            <li>Min Temperature is <span id="min_temp"></span></li>
+            <li>Max Temperature is <span id="max_temp"></span></li>
+
+          </ul>
+          <button type="button" class="btn btn-lg btn-block btn-outline-primary">More Info</button>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Humidity</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title text-center" ><span id="humidity2" style="font-size: 3rem;"></span> <small class="text-muted"> %</small>
+          </h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Humidity is <span id="humidity"></span></li>
+            <li>Wind Degree is <span id="wind_degrees"></span></li>
+            <li>Feels Like <span id="feels_like"></span></li>
+            
+          </ul>
+          <button type="button" class="btn btn-lg btn-block btn-primary">More Info</button>
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Wind</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title text-center" ><span id="wind_speed2" style="font-size: 3rem;"></span> <small class="text-muted">
+              km/hr</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+
+            <li>Wind speed is <span id="wind_speed"></span></li>
+            <li>Sunrise Time is <span id="sunrise"></span></li>
+            <li>Sunset time isis <span id="sunset"></span></li>
+
+          </ul>
+          <button type="button" class="btn btn-lg btn-block btn-primary">More Info</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="https://source.unsplash.com/random/900×700/?Weather" alt="" width="50" height="50">
+          <small class="d-block mb-3 text-muted">© 2023-Present</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <!-- <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li> -->
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <!-- <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li> -->
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <!-- <li><a class="text-muted" href="#">Resource</a></li> -->
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <!-- <li><a class="text-muted" href="#">Another resource</a></li> -->
+            <li><a class="text-muted" href="#">Final resource</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <!-- <li><a class="text-muted" href="#">Privacy</a></li> -->
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="actual.js"></script>
+
+</body>
+
+</html>
