@@ -9,7 +9,7 @@ const options = {
 
 
 async function getLocation() {
-	const data = await fetch('http://ip-api.com/json/')
+	const data = await fetch('https://ipapi.co/json')
 	const dataToReturn = await data.json()
 	return dataToReturn.city
   }
